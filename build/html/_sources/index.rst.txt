@@ -1,0 +1,133 @@
+.. test1 documentation master file, created by
+   sphinx-quickstart on Mon Dec 24 16:47:57 2018.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+我是一个大标题
+=================================
+
+我是一个副标题
+***************
+
+下面是一个列表
+****************
+
+1. *一个星号 代表是的是斜体*
+
+#. **两个星号代表的是粗体**
+
+#. ``两个反引号代码示例 videojs.plugin('examplePlugin', examplePlugin)``
+
+#. 备注 如果星号或反引号出现在正在运行的文本中并且可能与内联标记分隔符混淆，则必须使用反斜杠对其进行转义
+
+
+下面是一个列表和类似引用的块
+***********************************
+* 段落开头放置一个星号并且正确的缩进
+* 段落开头放置一个星号并且正确的缩进
+* 段落开头放置一个星号并且正确的缩进
+
+* 我是一个嵌套列表
+   * children
+   * children
+
+* `我是一个超链接 <http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_
+
+* 下面是块的内容 ::
+
+    这里是块的内容。前面有缩进，空行，和::分隔符。
+    此处内容会被一直视为块内容
+
+    空行也不能阻断块内容。。
+
+* 但是，当内容像这样，不再和块内容一样缩进时，块内容就自动的结束了 测试代码块.... ::
+
+   for i in [1,2,3,4,5]:
+        print i
+
+* .. highlight:: c
+   :linenothreshold: 10
+
+* 测试测试
+
+
+* 下面是表格
+
+====== ======= =======
+title  title2  title3
+====== ======= =======
+info   内容     是打
+info   内容     是的发
+info   内容     是
+====== ======= =======
+
++------------------------+------------+----------+----------+
+| Header row, column 1   | Header 2   | Header 3 | Header 4 |
+| (header rows optional) |            |          |          |
++========================+============+==========+==========+
+| body row 1, column 1   | column 2   | column 3 | column 4 |
++------------------------+------------+----------+----------+
+| body row 2             | ...        | ...      |          |
++------------------------+------------+----------+----------+
+
+.. math::
+
+   (a + b)^2 = a^2 + 2ab + b^2
+
+   (a - b)^2 = a^2 - 2ab + b^2
+
+`Link text <https://domain.invalid/>`_
+
+* This is a paragraph that contains `a link`_.
+
+* .. _a link: https://domain.invalid/
+
+=================
+这是个标题
+=================
+
+.. function:: foo(x)
+              foo(y, z)
+   :module: some.module.name
+
+   Return a line of text input from the user.
+
+
+* 分割线-----------------------
+
+.. image:: ./_static/act.*
+
+* 分割线 -------------------
+
+Lorem ipsum [#f1]_ dolor sit amet ... [#f2]_
+
+.. rubric:: Footnotes
+
+.. [#f1] Text of the first footnote.
+.. [#f2] Text of the second footnote.
+
+Lorem ipsum [Ref]_ dolor sit amet.
+
+.. [Ref] Book or article reference, URL or whatever.
+
+* 我是一个 name
+
+
+
+
+.. |name| replace:: replacement *text*
+
+* 我是一个 name
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+
+索引和表格
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
